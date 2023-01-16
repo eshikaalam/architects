@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Work+Sans&display=swap');
-/* body{
-    display: flex;
-    flex-direction: column;
-}  */
+
 .header{
     display: flex;
     flex-direction: column;
@@ -10,11 +7,12 @@
     justify-content: center;
     align-items: center;
 }
-/* .header section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+h3,h2{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 2em;
+}
 .header-details{
     display: flex;
     justify-content: center;
@@ -68,26 +66,15 @@ For all button
     width: 115px;
     border: 0;
     border-radius: 7px;
-    /* margin-bottom: 50px; */
+    margin-bottom: 50px;
 }
 .header-image img{
-    width: 65%;
-    height: 65%;
-    /* margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 430px; */
-    
+    width: 900px;
+    height: 500px;
+    margin-bottom: 40px;
 }
 
 /* main section */
-
-/* .main{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-} */
-
 .main-feature-list{
     display: flex;
     gap: 60px;
@@ -111,6 +98,7 @@ For all button
 .main-feature-list-info{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 400px;
     height: 300px;
     font-size: small;
@@ -129,6 +117,7 @@ For all button
     background-color: orange;
     border: 0;
     border-radius: 7px;
+    margin-top: 20px;
 }
 
 /* 
@@ -137,8 +126,6 @@ second section of main section
 .main-feature-details {
     display: flex;
     gap: 100px;
-    /* height: 900px;
-    width: 700px; */
     margin-left: 230px;
     margin-right: 50px;
 }
@@ -168,7 +155,6 @@ second section of main section
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    /* margin-bottom: 20px; */
     margin-right: 200px;
 }
 .year-button{
@@ -254,4 +240,48 @@ second section of main section
     padding-top: 7px;
     margin-left: 250px;
     margin-bottom: 60px;
+}
+
+@media screen and (max-width:576px){
+      
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .header-details, .main-feature-list, .main-feature-details{
+        display: grid;
+        gap: 0;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .header-info p{
+        width: 100%;
+    }
+    .main-feature-list-image{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .main-feature-details{
+        margin-left: 10px;
+    }
+    .icons{
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .footer-paragraph{
+        width: 100%;
+    }
+    .sponsor{
+        margin-left: 0px;
+    }
+    .sponsor-icons{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .copyright{
+        width: 100%;
+        margin-left: 0px;
+    }
+
 }
