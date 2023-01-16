@@ -1,27 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Work+Sans&display=swap');
-body{
+/* body{
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
-} 
-h3,h2{
-    font-size: 3em;
-    font-family: 'Work Sans';
-
-}
+}  */
 .header{
-    background-color: rgb(244, 231, 209);
-    width: 100%;
-    height: 1000px;
-    display:flex;
-    flex-direction: column;
-}
-.header section{
     display: flex;
+    flex-direction: column;
+    background-color: rgb(244, 231, 209);
     justify-content: center;
     align-items: center;
 }
+/* .header section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 .header-details{
     display: flex;
     justify-content: center;
@@ -75,26 +68,25 @@ For all button
     width: 115px;
     border: 0;
     border-radius: 7px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 .header-image img{
-    position: absolute;
     width: 65%;
     height: 65%;
-    margin-left: 100px;
+    /* margin-left: 100px;
     margin-right: 100px;
-    margin-top: 430px;
+    margin-top: 430px; */
     
 }
 
 /* main section */
 
-.main{
+/* .main{
     display: flex;
     flex-direction: column;
     width: 100%;
 
-}
+} */
 
 .main-feature-list{
     display: flex;
@@ -108,7 +100,7 @@ For all button
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 100px;
 }
 .main-feature-list-image img{
@@ -125,7 +117,7 @@ For all button
 }
 .main-feature-list-info p{
     color: #727272;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .main-feature-list-info button>a{
         text-decoration: none;
@@ -142,31 +134,30 @@ For all button
 /* 
 second section of main section 
 */
-.main-feature-details{
-    height: 900px;
-    width: 700px;
-    margin-left: 100px;
-    margin-right: 100px;
+.main-feature-details {
     display: flex;
-    align-items: center;
-    align-content: center;
     gap: 100px;
+    /* height: 900px;
+    width: 700px; */
+    margin-left: 230px;
+    margin-right: 50px;
 }
 .more-features{
     display: flex;
     flex-direction: column;
 }
 .more-features h3{
-    border-left: 3px solid orange;
+    border-left: 5px solid orange;
+    padding-left: 10px;
+    font-weight: bolder;
+    font-size: 18;
 }
 .more-features div{
     width: 430px;
     height: 120px;
     border: 1px solid whitesmoke;
     box-shadow: 2px 2px 5px rgb(220, 219, 219);
-    padding: 8px 5px;
-    margin-top: 10px;
-    
+    padding: 8px 5px;   
 }
 .more-features p{
     font-size: small;
@@ -174,7 +165,93 @@ second section of main section
 }
 
 .more-features-image{
-    margin-top: 100px;
-    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
     margin-right: 200px;
+}
+.year-button{
+    height: 100px;
+    width: 170px;
+    position: relative;
+    top: -70px;
+    right: 50px;
+    background-color: rgb(255, 132, 0);
+    border: 0;
+    border-radius: 8px;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+}
+
+.facts{
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    margin-right: 200px;
+} 
+.fact-paragraph, .footer-paragraph{
+    width: 500px;
+    font-size: medium;
+    color: #727272;
+}
+
+.facts .icons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 60px;
+    margin-top: 30px;
+    
+}
+.icons div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid burlywood;
+    border-radius: 7px;
+    text-align: center;
+    font-weight: 800;
+    width: 200px;
+    height: 200px;
+}
+.icons div>.icon-paragraph{
+    font-size: small;
+    color: #727272;
+}
+
+/* This is footer */
+
+.sponsor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sponsor .footer-paragraph{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sponsor-icons{
+    display: flex;
+    gap: 80px;
+}
+.sponsor-icons img{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.copyright{
+    width: 1000px;
+    height: 50px;
+    border:0;
+    border-radius: 7px;
+    background-color: rgb(244, 231, 209);
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 7px;
+    margin-left: 250px;
+    margin-bottom: 60px;
 }
